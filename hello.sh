@@ -10,5 +10,5 @@ then
     echo "$R ERROR: User is not a root $N"
     exit 1
 else
-    echo "User is a root one"
+    echo "$G User is a root one"
 fi
