@@ -7,8 +7,8 @@ N="\e[0m"
 
 if [ $ID -ne 0 ]
 then
-    echo "$R ERROR: User is not a root $N"
+    echo -e "$R ERROR: User is not a root $N"
     exit 1
 else
-    echo "$G User is a root one"
+    echo -e "$G User is a root one"
 fi
