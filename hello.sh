@@ -7,7 +7,7 @@ N="\e[0m"
 
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
-echo "Script started executing at $TIMESTAMP"
+echo "Script started executing at $Y $TIMESTAMP $N"
 
 if [ $ID -ne 0 ]
 then
