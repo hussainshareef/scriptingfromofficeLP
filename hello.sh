@@ -27,10 +27,10 @@ else
     echo -e "$G User is a root one $N"
 fi
 
-yum install mysql -y &>> $LOGFILE
+yum install mysql -y 
 
 VALIDATE $? "Installing MySQL"
 
-yum install git -y &>> $LOGFILE
+yum install git -y 
 
 VALIDATE $? "Installing GIT"
