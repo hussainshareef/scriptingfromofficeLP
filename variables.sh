@@ -7,7 +7,7 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-TIMESTAMP=(date +%F-%H:%M:%S)
+TIMESTAMP=$(date +%F-%H:%M:%S)
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 echo " Script started execting at $TIMESTAMP " &>> $LOGFILE
@@ -37,3 +37,7 @@ VALIDATE $? "$G Installing Mysql $N" &>> $LOGFILE
 yum install git -y
 
 VALIDATE $? "$G nstalling git $N" &>> $LOGFILE
+
+# if we have mutiple packages need to install then
+# it is difficult to execute each and every one. So,
+# We will use loops 
