@@ -11,6 +11,7 @@ ID=$(id -u)
 #LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
 if [ $ID -ne 0 ]
+
 then
     echo "ERROR: User is not a root"
     exit 1
